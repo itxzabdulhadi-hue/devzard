@@ -1,3 +1,4 @@
+import express from 'express';
 import { createApp } from './server/app.ts';
 import { bootstrapAdmin } from './server/bootstrap.ts';
 import { assertProductionConfig } from './server/env.ts';
@@ -10,6 +11,6 @@ await getStorage().init();
 await bootstrapAdmin();
 await sessionSecret();
 
-const app = createApp({ serveStatic: true });
+const app: express.Express = createApp({ serveStatic: true });
 
 export default app;
