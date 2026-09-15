@@ -1,9 +1,9 @@
 import 'express';
-import { createApp } from './server/app';
-import { bootstrapAdmin } from './server/bootstrap';
-import { assertProductionConfig } from './server/env';
-import { sessionSecret } from './server/secret';
-import { getStorage } from './server/storage/index';
+import { createApp } from './server/app.js';
+import { bootstrapAdmin } from './server/bootstrap.js';
+import { assertProductionConfig } from './server/env.js';
+import { sessionSecret } from './server/secret.js';
+import { getStorage } from './server/storage/index.js';
 
 assertProductionConfig();
 
