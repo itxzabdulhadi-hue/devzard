@@ -1,5 +1,5 @@
-import type { CmsContent } from '../src/cms/types.ts';
-import { getStorage } from './storage/index.ts';
+import type { CmsContent } from '../src/cms/types.js';
+import { getStorage } from './storage/index.js';
 
 // Content stores image IDs. Before sending to any client we resolve each ID to
 // its Blob (or local) URL so the browser never needs the storage token.
