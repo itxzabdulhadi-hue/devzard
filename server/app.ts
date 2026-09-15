@@ -6,12 +6,12 @@ import cookieParser from 'cookie-parser';
 import express, { type NextFunction, type Request, type Response } from 'express';
 import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
-import { isProduction } from './env.ts';
-import { MAX_UPLOAD, removeUpload, storeUpload, streamLocalMedia } from './media.ts';
-import { withResolvedMedia } from './resolve.ts';
-import { sessionSecret } from './secret.ts';
-import { getStorage, publicContent, type SessionRecord } from './storage/index.ts';
-import { contentSchema, credentialsSchema, passwordChangeSchema } from './validate.ts';
+import { isProduction } from './env.js';
+import { MAX_UPLOAD, removeUpload, storeUpload, streamLocalMedia } from './media.js';
+import { withResolvedMedia } from './resolve.js';
+import { sessionSecret } from './secret.js';
+import { getStorage, publicContent, type SessionRecord } from './storage/index.js';
+import { contentSchema, credentialsSchema, passwordChangeSchema } from './validate.js';
 
 const COOKIE = 'dz_session';
 const CSRF_COOKIE = 'dz_csrf';
