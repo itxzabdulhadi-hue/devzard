@@ -1,4 +1,4 @@
-import express from 'express';
+import 'express';
 import { createApp } from './server/app';
 import { bootstrapAdmin } from './server/bootstrap';
 import { assertProductionConfig } from './server/env';
